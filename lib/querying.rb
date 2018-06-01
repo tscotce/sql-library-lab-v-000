@@ -17,7 +17,7 @@ def select_value_and_count_of_most_prolific_species
   "SELECT characters.species, COUNT(characters.species) AS count
   FROM characters
   ORDER BY count DESC
-  LIMIT 1"
+  LIMIT 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
