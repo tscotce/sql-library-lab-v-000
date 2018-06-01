@@ -43,9 +43,9 @@ end
 
 def select_character_names_and_number_of_books_they_are_in
   "SELECT character.name
-  FROM characters
-  INNER JOIN series
-  ON characters.series_id = series.id
+  FROM series
+  INNER JOIN characters
+  ON series.id = characters.series_id = 
   WHERE characters.species = 'human'
   GROUP BY series.title
   ORDER BY COUNT(characters.species) DESC
